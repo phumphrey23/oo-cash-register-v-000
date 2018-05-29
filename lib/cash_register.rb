@@ -18,8 +18,12 @@ def add_item(title, price, quantity = 1)
 end
 
 def apply_discount
-  @total = @total - discount
-  puts "After the discount, the total comes to $#{@total}."
+   if discount = 0
+    puts " There is no discount to apply"
+   else
+    @total = @total*(1-@discount/100)
+    puts "After the discount, the total comes to $#{@total}."
+  end
 end
 
 def items
