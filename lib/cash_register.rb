@@ -11,7 +11,7 @@ def total
   @total
 end
 
-def add_item(title, price, quantity = nil)
+def add_item(title, price, quantity = 1)
   @items << title
   @total += price*quantity
   @last_transaction = price
