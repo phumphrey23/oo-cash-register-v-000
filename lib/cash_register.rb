@@ -11,7 +11,7 @@ def total
 end
 
 def add_item(title, price, quantity = nil)
-  @total + price
+  @total + price*quantity
 end
 
 def apply_discount
