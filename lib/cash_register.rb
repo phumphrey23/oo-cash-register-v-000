@@ -12,7 +12,7 @@ def total
 end
 
 def add_item(title, price, quantity = nil)
-  title << @items
+  @items << title
   @total + price*quantity
 end
 
