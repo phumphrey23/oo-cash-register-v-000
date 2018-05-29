@@ -13,7 +13,7 @@ end
 
 def add_item(title, price, quantity = nil)
   @items << title
-  @total += price*quantity
+  self.total = price*quantity
 end
 
 def apply_discount
