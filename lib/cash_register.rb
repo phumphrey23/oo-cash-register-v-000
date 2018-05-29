@@ -20,7 +20,8 @@ end
 def apply_discount
    if discount == 0
     puts "There is no discount to apply."
-  elsif @total -= @total*@discount/100
+  else
+    @total -= @total*@discount/100
     puts "After the discount, the total comes to $#{@total}."
   end
 end
